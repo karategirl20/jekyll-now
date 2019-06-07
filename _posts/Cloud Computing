@@ -1,0 +1,70 @@
+
+Amazon Web Services like EC2 virtual machines. Or S3 cloud storage, or virtual networks which are called VPCs,
+Virtual Private Clouds. That's core IT infrastructure. And so it's considered Infrastructure as a Service. 
+Let's start with Infrastructure as a Service, otherwise called IaaS. This includes things in Amazon Web Services like EC2 virtual machines. Or S3 cloud storage, or virtual networks which are called VPCs, Virtual Private Clouds. That's core IT infrastructure. And so it's considered Infrastructure as a Service. Another type of cloud computing model is Platform as a Service, otherwise called PaaS. This deals with things like databases or even things like searching, such as the Amazon CloudSearch capability. Software as a Service is called SaaS, and this is the way we would deal with things like websites or using Amazon Web Services WorkDocs. 
+Well we can work with office productivity documents like Excel and Word documents in the cloud. Security as a Service is called SECaaS. 
+
+we've got an option in Amazon Web Services called AWS Shield. The purpose of this offering is for distributed denial of service attack
+protection. A DDoS occurs when an attacker has control of slave machines, otherwise called zombies.
+And the collection of these on a network is called a botnet. 
+Well, the attacker can issue commands to those slaves so that they could attack a victim host,or an entire network.
+Such as to flood it with traffic thereby preventing legitimate traffic from getting to, for example, a legitimate website.
+And in many cases a lot of these botnets are actually for rent by malicious users to the highest bidder. 
+So for a fee, potentially we could pay for the use of a botnet to bring down a network or a host. 
+Now luckily with Amazon Web Services, this can be mitigated using AWS Shield. 
+DDoS protection mechanisms will often do things like looking at irregular traffic flows and blocking certain IP addresses
+
+Characteristics of Cloud computing:
+1. Resoure Pooling
+2. Elasticity
+3. Measured Service
+4. self service
+5. Broad network access
+6. On demand
+
+Cloud Service Models:
+1. IaaS- EC2- 
+2. SaaS- WorkDocs
+3. PaaS- Cloudsearch
+4. SECaaS- AWS Shield
+Amazon Web Services is a pretty mature technology and the services are changing all of the time. The other fact is that some of
+these Amazon Web Services are unavailable in some regions. So for example, Amazon WorkDocs are currently unavailable in London.
+[AWS Service Offerings include Websites, Backup and Recovery, Archiving, Disaster Recovery, DevOps, Big Data,
+Financial Services, High Performance, Digital Marketing, E-Commerce, Media and Entertainment, and Mobile Services.]
+Things like hosting websites in the cloud, backup and recovery, long-term archiving, disaster recovery, big data analysis and so on. 
+Some common service offerings include S3. This stands for Simple Storage Services and its generalized storage in the cloud where data
+gets replicated to other availability zones for high availability. EC2 stands for Elastic Cloud Compute. This is where we ge
+t into the virtual machines for Amazon Web Services, which are also called instances. Windows and Linux Operating Systems are supported
+Glacier is another service offering that's designed as long-term storage for infrequently accessed data. RDS stands for Relational 
+Database Service. This is where we get into our cloud hosted databases like Microsoft SQL Server, Oracle, and MySQL, to name just a few. Route 53 is used for DNS domain name hosting and name resolution. A VPC is a Virtual Private Cloud. Essentially, it's a virtual network that's defined within the Amazon Web Services cloud. And we then deploy other resources such as EC2 instances into a subnet within the VPC. WorkDocs is an Amazon Web Services offering whereby we have office productivity file storage and sharing available in the Amazon cloud. CloudFront is another service that places website content near users geographically. So that when users decide that they want to view some kind of a stream or pull-up data from a website, it reduces the network latency or
+reduces the amount of time that it might otherwise have taken to pull that from halfway around the world
+Cloud computing ROI is approximately 5 years. As per IDC, ROI with cloud computing is over time, high availability, high scalability.
+Data centers are physical facilities that can house thousands of servers. 
+That means many racks that are full of different types of equipment, including things like routers, and switches, and storage arrays. 
+Now these racks, of course, would be locked. And many rack mounting systems will lock from the front, as well as from the back. 
+In a data center, there also has to be careful planning for HVAC, heating, ventilation, and air conditioning.
+So we can imagine with thousands of servers, the amount of heat being blasted into the air within the facility.
+That heat needs to be removed efficiently, and cool air needs to be put in to replace it.
+Then there is power generators in case of a power outage, and multiple internet connections, in case of a 
+failure through one Internet connection. It's important that cloud customers can get to their IT systems in the data center.
+Data centers also go through a lot of physical security to make sure that customer information is kept private and safe.
+
+In Amazon Web Services, we have the notion of regions and availability zones .
+A region is a geographical area around the globe where Amazon Web Services has a presence. 
+And they do have presences all over the world. Now the region is subdivided into availability zones. Now there is not a one
+to one correlation, though, between an availability zone and a data center.    
+o a region is a geographic area, such as US West. 
+And when we're building new Amazon web services resources like virtual machines or databases, 
+we determine the placement of that resource in a specific region. Some services are only available in specific regions
+around the world. Now the thing to realize also, is that AWS resources are not replicated across regions by default.
+Now there is also a consideration that there is a charge for cross region data transfers.
+An availability zone is called an AZ. And essentially, it's an isolated location within a region,
+such as us-west-1a. Now that single availability zone, or AZ, can map to a different physical data center for different AWS accounts.
+Because remember, there is not a one to one correlation between an availability zone and a physical data center facility. That's not how it
+works. 
+And that's because of replication of resources between those availability zones.
+But remember that it's not just a single data center. So for example, a larger availability zone can have 
+multiple physical data centers backing it. we can see a listing of Amazon Web Services regions. And in parentheses,
+we can also see the number of availability zonesavailable. [The Region & Number of Availability Zones includes AWS GovCloud, 
+US West, US East, Canada,South America, Europe, Asia Pacific, and China.] So for example, in US West, specifically
+in Oregon, we've got three availability zones.
