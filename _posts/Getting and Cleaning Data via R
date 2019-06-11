@@ -1,0 +1,10 @@
+using Dplyr package:Dplyr is a fast and powerful R package written by Hadley  Wickham 
+and Romain Francois that provides a consistent and concise grammar for manipulating tabular data.
+install(dplyr) then do a library(dplyr) in R studio console - to load the package again.
+type packageVersion("dplyr") in R studio console to find the version of the Dplyr package.
+dim()-dim() to look at the dimensions of a data frame, file etc.
+The first step of working with data in dplyr is to load the data into what the package authors call a 
+'data frame tbl' or 'tbl_df'. tbl_df {dplyr}
+Use the following code to create a new tbl_df called cran
+Example: cran <- tbl_df(mydf).
+To remove a dataframe that we created earlier: remove the original data frame workspace with rm("mydf").
