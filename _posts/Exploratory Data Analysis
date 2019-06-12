@@ -12,3 +12,6 @@ Principle 5: Describe and document the evidence with appropriate labels, scales,
 Principle 6: content is King
    Analytical presentations ultimately stand or fall depending on the quality, relevance, and
 integrity of their content
+
+
+ ggplot2 is an R package/phenomenon for data visualization. It was created by Hadley Wickham,
