@@ -8,3 +8,12 @@ The first step of working with data in dplyr is to load the data into what the p
 Use the following code to create a new tbl_df called cran
 Example: cran <- tbl_df(mydf).
 To remove a dataframe that we created earlier: remove the original data frame workspace with rm("mydf").
+Specifically, dplyr supplies five 'verbs' that cover most fundamental data manipulation tasks:
+ select(), filter(), arrange(), mutate(), and summarize().
+Example when using select(cran,ip_id,package,country), we do not need to use $
+we don't have to type cran$ip_id, cran$package, and | cran$country, as we normally would when referring to 
+columns of a data frame. The select() function knows we are referring to columns of the cran dataset.
+select(cran, r_arch:country)
+select(cran, country:r_arch) selects the same columns in reverse order. 
+To omit a certain variable from dataset you can use  "-"
+select(cran, -time) to omit the time column.
