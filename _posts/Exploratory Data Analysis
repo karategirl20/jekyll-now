@@ -12,6 +12,41 @@ Principle 5: Describe and document the evidence with appropriate labels, scales,
 Principle 6: content is King
    Analytical presentations ultimately stand or fall depending on the quality, relevance, and
 integrity of their content
-
+Exploratory graphs serve mostly the same functions as graphs. They help us find patterns
+ in data and understand its properties. They suggest modeling strategies and help to | debug analyses. 
+ We DON'T use exploratory graphs to communicate results
 
  ggplot2 is an R package/phenomenon for data visualization. It was created by Hadley Wickham,
+ 
+ library(ggplot2)
+library(datasets)
+data(mpg)
+qplot(displ, hwy, data = mpg)
+For a Histogram you need to only specify X- variable:-Histogram with the qplot function, by only specifying a single variable
+qplot(displ, data = mpg,fill= drv)
+For a Geom-
+qplot(model, hwy, data = mpg,geom=c("point","smooth"))
+Another feature of ggplot is called facets, and facets are like panels in lattice. The idea is that you can create
+separate plots, which indicate, again, subsets of your data indicated by a factor variable. 
+Facets are a way to create multiple panels of plots based on the levels of categorical variable. 
+The facets argument expects a formula type of input, with a∼separating the left hand side variable and the right hand side variable.
+The left hand side variable indicates how the rows of the panels should be divided and the right hand side variable indicates
+how thecolumnsofthepanelsshouldbedivided.
+binwidth:The width of the bins. 
+So when you build a plot with ggplot2, the basic idea if you're not going to be using the qplot function, you'll want to kind
+of build it piece by piece. You can kind of think of it as the artist's palette model.
+So this is the, similar to the model in the base plotting system but where you kind of start with something,
+and you kind of add things piece by piece. So unlike the lattice system, where you 
+had to have the whole plot is encoded in a single function call, you can start with a single call to, you can start 
+with a ggplot function
+
+summary(pollution$pm25)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+  3.383   8.549  10.047   9.836  11.356  18.441 
+  quantile(ppm)
+       0%       25%       50%       75%      100% 
+ 3.382626  8.548799 10.046697 11.356012 18.440731 
+ boxplot(ppm,col="blue")
+ abline "adds one or more straight lines through the current plot.
+dev.off()
+
