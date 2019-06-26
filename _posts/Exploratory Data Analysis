@@ -50,3 +50,5 @@ summary(pollution$pm25)
  abline "adds one or more straight lines through the current plot.
 dev.off()
 
+lwd-Part of Par function.The line width, a positive number, defaulting to 1. The interpretation is device-specific, and some devices
+do not implement line widths less than one. (See the help on the device for details of the interpretation.)
