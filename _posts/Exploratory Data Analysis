@@ -52,3 +52,5 @@ dev.off()
 
 lwd-Part of Par function.The line width, a positive number, defaulting to 1. The interpretation is device-specific, and some devices
 do not implement line widths less than one. (See the help on the device for details of the interpretation.)
+names(pollution) names function helps understand the dofferent columns of a dataset
+[1] "pm25"      "fips"      "region"    "longitude" "latitude" 
