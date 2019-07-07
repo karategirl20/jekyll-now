@@ -6,3 +6,7 @@ table(airquality$Day)
  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  5  3 
 use the R function tapply which applies "a function over a ragged array". This means that every element of the array is assigned
 a factor and the function is applied to subsets of the array (identified by the factor vector).
+If you have to drop a variable from an existing dataset/dataframeusing "dplyr" package and using the Select
+Irisdata<-select(iris,-starts_with("Species")) /# Drop variables with - OR
+df <- iris[, -ncol(iris)]
+the original Iris dataset had 6 variable, with this command, I have now 4 variables only
