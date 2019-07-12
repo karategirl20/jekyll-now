@@ -1,0 +1,22 @@
+“Covariance” indicates the direction of the linear relationship between variables. 
+“Correlation” on the other hand measures both the strength and direction of the linear relationship between two variables. 
+
+What is the intuitive relationship between SVD and PCA? Singular value decomposition (SVD) and principal component analysis(PCA)
+(PCA) are two eigenvalue methods used to reduce a high-dimensional dataset into fewer dimensions while retaining important information.
+PCA is a method used to reduce number of variables in your data by extracting important one from a large pool.
+A PCA plot shows clusters of samples based on their similarity. PCA does not discard any samples or characteristics (variables).
+Instead, it reduces the overwhelming number of dimensions by constructing principal components (PCs).
+An unsupervised learning algorithm (such as clustering or PCA) finds some patterns and regularities without direct supervision
+of a human, i.e, by itself.
+PCA is a widely used statistical tool for dimension reduction. The objective of PCA is to find common factors, the so–called 
+principal components,
+in form of linear combinations of the variables under investigation, and to rank them according to their importance.
+Covariance: The prefix ‘Co’ defines some kind of joint action and variance refers to the change or variation. So it says, two variables are related based on how these variables change in relation with each other.
+
+But wait, is covariance same as correlation?
+As covariance says something on same lines as correlation, correlation takes a step further than 
+covariance and also tells us about the strength of the relationship.
+Both can be positive or negative. Covariance is positive if one increases other also increases and 
+negative if one increases other decreases.
+https://towardsdatascience.com/getting-the-basics-of-correlation-covariance-c8fc110b90b4
+
